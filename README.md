@@ -1,6 +1,6 @@
 # spearREST
 
-[![CI Status](http://img.shields.io/travis/Tolgab/spearRest.svg?style=flat)](https://travis-ci.org/Tolgab/spearRest)
+[![Build Status](https://travis-ci.org/TolgaB/spearRest.svg?branch=master)](https://travis-ci.org/TolgaB/spearRest)
 [![Version](https://img.shields.io/cocoapods/v/spearREST.svg?style=flat)](http://cocoapods.org/pods/spearREST)
 [![License](https://img.shields.io/cocoapods/l/spearREST.svg?style=flat)](http://cocoapods.org/pods/spearREST)
 [![Platform](https://img.shields.io/cocoapods/p/spearREST.svg?style=flat)](http://cocoapods.org/pods/spearREST)
