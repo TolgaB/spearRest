@@ -7,9 +7,11 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install`. To call on any of the commands just give the correct url/ and or parameters. More coming out soon --Work in progress
 
 ## Requirements
+
+spearREST requires no seperate installations just add it to your project and import it.
 
 ## Installation
 
@@ -22,7 +24,7 @@ pod "spearREST"
 
 ## Author
 
-Tolgab, Mathman290@gmail.com
+Tolga Beser
 
 ## License
 

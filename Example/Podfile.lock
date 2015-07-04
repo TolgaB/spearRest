@@ -1,0 +1,20 @@
+PODS:
+  - Expecta (1.0.0)
+  - spearREST (0.1.0)
+  - Specta (1.0.2)
+
+DEPENDENCIES:
+  - Expecta
+  - spearREST (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  spearREST:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
+  spearREST: f7fb92d6186a1458b32a8b549e7556f8795c36f7
+  Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
+
+COCOAPODS: 0.37.2
