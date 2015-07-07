@@ -64,7 +64,7 @@
     }
 }
 
--(BOOL *)putRequestCall:(NSString *)url bodyString:(NSString *)theBody {
+-(BOOL)putRequestCall:(NSString *)url bodyString:(NSString *)theBody {
     
     NSMutableURLRequest *putRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     
@@ -74,9 +74,6 @@
     [putRequest setHTTPBody:[NSData dataWithBytes:[theBody UTF8String] length:strlen([theBody UTF8String])]];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:putRequest delegate:self];
     if(conn) {
-        NSURLResponse *requestResponse;
-        NSData *requestHandler = [NSURLConnection sendSynchronousRequest:putRequest returningResponse:&requestResponse error:nil];
-        NSString *requestReply = [[NSString alloc] initWithBytes:[requestHandler bytes] length:[requestHandler length] encoding:NSASCIIStringEncoding];
         return true;
         
     } else {
