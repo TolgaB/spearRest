@@ -14,6 +14,8 @@
 -(NSDictionary *)getRestCall:(NSString *)url;
 //This calls the post request
 -(NSDictionary *)postRestCall:(NSString *)url params:(NSArray *)theParams;
+//This calls the put request
+-(BOOL)putRequestCall:(NSString *)url bodyString:(NSString *)theBody;
 
 
 

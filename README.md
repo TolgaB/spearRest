@@ -7,11 +7,40 @@
 
 ## ULTRA DUPER SUPER IMPORTANT
 
-This project is nowhere near done please do not doanload it was released early for a test 
+This project is nowhere near done doanload at your own risk.
 
-## Usage
+## Install
 
-To run the example project, clone the repo, and run `pod install`. To call on any of the commands just give the correct url/ and or parameters. More coming out soon --Work in progress
+To run the example project, clone the repo, and run `pod install`. --Work in progress
+
+##SetUp
+
+Import the appCommunicate into your .m file
+```Objective-C
+#import <appCommunicate.h>
+```
+
+Next set up a property of AppCommunicate class
+```Objective-C
+@property (nonatomic, strong) appCommunicate *communicate;
+```
+
+After that initialize _communicate (preferably in the viewDidLoad method)
+```Objective-C
+ _communicate = [[appCommunicate alloc] init];
+```
+
+##Using Get Calls
+To use a get call simply give your url with the params in it and it will return an variable of type NSDictionary
+```Objective-C
+NSDictionary *result = [_communicate getRestCall:@"your url goes here"];
+```
+
+##Using Post Calls
+TBD
+
+##Using Put Calls
+TBDs
 
 ## Requirements
 
