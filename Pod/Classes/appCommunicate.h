@@ -11,7 +11,9 @@
 @interface appCommunicate : NSObject
 
 //This calls the get request
--(NSDictionary *)restCall:(NSString *)url;
+-(NSDictionary *)getRestCall:(NSString *)url;
+//This calls the post request
+-(NSDictionary *)postRestCall:(NSString *)url params:(NSArray *)theParams;
 
 
 
