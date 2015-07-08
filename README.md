@@ -5,9 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/spearREST.svg?style=flat)](http://cocoapods.org/pods/spearREST)
 [![Platform](https://img.shields.io/cocoapods/p/spearREST.svg?style=flat)](http://cocoapods.org/pods/spearREST)
 
-## ULTRA DUPER SUPER IMPORTANT
-
-This project is nowhere near done doanload at your own risk.
 
 ## Install
 
@@ -31,16 +28,35 @@ After that initialize _communicate (preferably in the viewDidLoad method)
 ```
 
 ##Using Get Calls
-To use a get call simply give your url with the params in it and it will return an variable of type NSDictionary
+There are 2 types of get calls one that returns a type of NSData and the other that returns an NSDictionary
+
+To call the Nsdictionary one just call the method like this
 ```Objective-C
-NSDictionary *result = [_communicate getRestCall:@"your url goes here"];
+NSDictionary *result = [_communicate getRestCallAsDictionary:@"your url goes here"];
+```
+
+To call the NSData one just call the method like this
+```Objective-C
+NSData *result = [_communicate getRestCallAsData:@"your url goes here"];
 ```
 
 ##Using Post Calls
-TBD
+To use the post call you will give the method an array with your data such as 
+[0] - name=hello
+[1] - pass=ilovekittens
+You will also add the needed url your end code will look like one these
+```Objective-C
+NSDictionary *result = [_communicate postRestCallAsDictionary:@"your url here" params:array];
+```
+```Objective-C
+NSData *result = [_communicate postRestCallAsData:@"your url here" params:array];
+```
 
 ##Using Put Calls
-TBDs
+To use a Put Call just call the method and give it your url and you're body of data. It will return a BOOL of tru or false depending on if it works or not.
+```Objective-C
+BOOL worked = [_communicate putRequestCall:@"your url here" bodyString:@"name=Tolga&pass=ILoveKittens"];
+```
 
 ## Requirements
 
