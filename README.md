@@ -70,7 +70,11 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "spearREST"
 ```
-
+##To Do List
+Multipart
+Delete Requests
+Dynamic Requests
+Guide on how to use RESt
 ## Author
 
 Tolga Beser
