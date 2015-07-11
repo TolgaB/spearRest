@@ -105,7 +105,7 @@
         return true;
         
     } else {
-        NSLog(@"spearRest::::::::Critical Error::::Put request with body data: %@ and url: %@ failed", url, theBody);
+        NSLog(@"spearRest::::::::Critical Error::::Put request with body data: %@ and url: %@ failed", url, bodyData);
         return false;
     }
 }
