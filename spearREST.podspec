@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "spearREST"
-  s.version          = "0.5.0"
+  s.version          = "0.8.0"
   s.summary          = "Making using REST easy with objC."
   s.description      = <<-DESC
 

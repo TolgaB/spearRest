@@ -19,7 +19,7 @@
 //This calls the post request and returns NSDATA
 -(NSData *)postRestCallAsData:(NSString *)url params:(NSArray *)theParams;
 //This calls the put request
--(BOOL)putRequestCall:(NSString *)url bodyString:(NSString *)theBody;
+-(BOOL)putRequestCall:(NSString *)url params:(NSArray *)theParams;
 
 
 

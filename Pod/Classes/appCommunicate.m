@@ -84,8 +84,16 @@
         return requestHandler;
 }
 
--(BOOL)putRequestCall:(NSString *)url bodyString:(NSString *)theBody {
-    
+-(BOOL)putRequestCall:(NSString *)url params:(NSArray *)theParams {
+    NSString *bodyData;
+    for (int i = 0; i < theParams.count; i ++) {
+        if (bodyData != NULL) {
+            bodyData = [NSString stringWithFormat:@"%@&%@", bodyData, theParams[i]];
+        }
+        else {
+            bodyData = [NSString stringWithFormat:@"%@", theParams[0]];
+        }
+    }
     NSMutableURLRequest *putRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     
     [putRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
