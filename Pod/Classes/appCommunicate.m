@@ -99,7 +99,7 @@
     [putRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     
     [putRequest setHTTPMethod:@"PUT"];
-    [putRequest setHTTPBody:[NSData dataWithBytes:[theBody UTF8String] length:strlen([theBody UTF8String])]];
+    [putRequest setHTTPBody:[NSData dataWithBytes:[bodyData UTF8String] length:strlen([bodyData UTF8String])]];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:putRequest delegate:self];
     if(conn) {
         return true;
