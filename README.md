@@ -62,6 +62,8 @@ BOOL worked = [_communicate putRequestCall:@"your url here" bodyString:@"name=To
 
 spearREST requires no seperate installations just add it to your project and import it.
 
+
+
 ## Installation
 
 spearREST is available through [CocoaPods](http://cocoapods.org). To install
@@ -74,7 +76,29 @@ pod "spearREST"
 Multipart
 Delete Requests
 Dynamic Requests
-Guide on how to use RESt
+Guide on how to use REST - DONE
+
+## How the hell do you use REST?
+The most important thing to remember while using REST is
+POST = Use when adding something
+GET = Use to get something
+PUT = Used to update somethin
+
+
+
+Get Requests
+
+ The important thing to know about get requests is that you type in a url with filled in params like http:/ Hello/myname=hi&mypasss=no. That url is sent to the server and it will return data on the page which you retrieve. For iOS all you will need to do is get the url and fill in the required params. From there spearREST will retrieve the data and give it to you in type NSDATA.
+
+Post Requests
+  The important thing to know about post requests is that you need a url and a list of params that you want to send such as name=hi pass=hello. After sending these the server will post onto the page whether you're data was added successfully. For iOS all you will need to do is give spearREST the url and the params, the returned data will be of type NSDATA
+
+Put Requests
+
+Coming Soon
+
+
+
 ## Author
 
 Tolga Beser
