@@ -82,7 +82,7 @@ Guide on how to use REST - DONE
 The most important thing to remember while using REST is
 POST = Use when adding something
 GET = Use to get something
-PUT = Used to update somethin
+PUT = Used to update something
 
 
 
