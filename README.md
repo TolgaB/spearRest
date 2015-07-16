@@ -41,7 +41,7 @@ NSData *result = [_communicate getRestCallAsData:@"your url goes here"];
 ```
 
 ##Using Post Calls
-To use the post call you will give the method an array with your data such as 
+To use the post call you will give the method an array with your data such as
 [0] - name=hello
 [1] - pass=ilovekittens
 You will also add the needed url your end code will look like one these
@@ -72,35 +72,42 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "spearREST"
 ```
-##To Do List
-Multipart
-Delete Requests
-Dynamic Requests
-Guide on how to use REST - DONE
 
 ## How the hell do you use REST?
 
 The most important thing to remember while using REST is
 
-POST = Use when adding something
+#POST = Use when adding something
 
-GET = Use to get something
+#GET = Use to get something
 
-PUT = Used to update something
+#PUT = Used to update something
 
 
 
-Get Requests
+#Get Requests
 
  The important thing to know about get requests is that you type in a url with filled in params like http:/ Hello/myname=hi&mypasss=no. That url is sent to the server and it will return data on the page which you retrieve. For iOS all you will need to do is get the url and fill in the required params. From there spearREST will retrieve the data and give it to you in type NSDATA.
 
-Post Requests
+#Post Requests
+
   The important thing to know about post requests is that you need a url and a list of params that you want to send such as name=hi pass=hello. After sending these the server will post onto the page whether you're data was added successfully. For iOS all you will need to do is give spearREST the url and the params, the returned data will be of type NSDATA
 
-Put Requests
+#Put Requests
 
 Coming Soon
 
+##Feautures coming out next update (1.3.0)
+#Multipart requests
+#Documentation connected with xcode
+#Delete Requests
+#Added guide (post)
+
+##To Do List
+Multipart -Coming out in version 1.3.0
+Delete Requests - Coming out in version 1.3.0
+Dynamic Requests
+Guide on how to use REST - DONE
 
 
 ## Author
