@@ -1,3 +1,4 @@
+#Attention NSURLConnection has been deprecated in iOS 9 so the use of this library is not recommended.
 # spearREST
 
 [![Build Status](https://travis-ci.org/TolgaB/spearRest.svg?branch=master)](https://travis-ci.org/TolgaB/spearRest)
